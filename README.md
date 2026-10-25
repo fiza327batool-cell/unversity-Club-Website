@@ -1,2 +1,3 @@
-# unversity Club Website
-html5,css,js
+#  Author: fiza Batool
+# reg : f25-adpcs-0013
+# sem: Third sem

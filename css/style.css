@@ -1,0 +1,312 @@
+```css
+/* =====================================
+   1. BASIC PAGE STYLING
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #26364a;
+    background-color: #f5f1e8;
+}
+
+
+/* =====================================
+   2. HEADER
+===================================== */
+
+header {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #173b57;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   3. NAVIGATION
+===================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px;
+    background-color: #102b40;
+}
+
+nav a {
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #d5a83c;
+    color: #102b40;
+}
+
+
+/* =====================================
+   4. MAIN CONTENT AND SECTIONS
+===================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #173b57;
+}
+
+
+/* =====================================
+   5. EVENT CARDS
+===================================== */
+
+article {
+    margin: 15px 0;
+    padding: 20px;
+    background-color: #f0f5f8;
+    border-left: 5px solid #d5a83c;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #173b57;
+}
+
+article a {
+    color: #145b83;
+}
+
+
+.registration-section {
+    width: 100%;
+    max-width: 1500px;
+    margin: 35px auto;
+    padding: 30px;
+    background: linear-gradient(120deg, #e5f2ff, #f5e4e9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.registration-section form {
+    background: transparent;
+    padding: 0;
+}
+
+
+/* =====================================
+   7. FORM LABELS AND INPUT FIELDS
+===================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #414c65;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8171a3;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.45);
+    font-size: 15px;
+    color: #344054;
+}
+
+.form-group input::placeholder {
+    color: #9299a8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #6c82b5;
+    outline-offset: 1px;
+}
+
+
+/* =====================================
+   8. TWO-COLUMN FORM ROW
+===================================== */
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* =====================================
+   9. RADIO BUTTONS AND FIELDSET
+===================================== */
+
+.registration-section fieldset {
+    border: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.registration-section legend {
+    margin-bottom: 15px;
+    color: #414c65;
+    font-size: 17px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.choice input {
+    width: auto;
+    margin: 0;
+}
+
+
+/* =====================================
+   10. BUTTONS
+===================================== */
+
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #173b57;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #286487;
+}
+
+/* Full-width registration section */
+.registration-section {
+    width: 90%;
+    max-width: 1400px;
+    margin: 35px auto;
+    padding: 40px;
+    background: linear-gradient(120deg, #e5f2ff, #f5e4e9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #102b40;
+    color: white;
+}
+
+/* =====================================
+   11. REGISTRATION MESSAGE AND LIST
+===================================== */
+
+#confirmationMessage {
+    color: #17643a;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.saved-registrations {
+    margin-top: 35px;
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================
+   12. FOOTER
+===================================== */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #102b40;
+    color: white;
+}
+
+
+/* =====================================
+   13. RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+
+    .registration-section {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .registration-section > h2 {
+        font-size: 24px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

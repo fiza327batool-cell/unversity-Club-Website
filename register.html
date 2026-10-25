@@ -1,0 +1,161 @@
+
+<section class="registration-section">
+    
+     <!-- Full-width header -->
+    <header>
+        <h1>Qarshi Club Society</h1>
+        <p>Explore Technology, Build Your Future!</p>
+    </header>
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html" class="active">Register</a>
+</nav>
+    <h2>Club Membership Form</h2>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+
+    <form id="registrationForm">
+
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                minlength="3"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="student@university.edu"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="03001234567"
+                pattern="[0-9]{11}"
+                title="Enter an 11-digit phone number"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Street Address"
+            >
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="city">City</label>
+                <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="City"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <input
+                    type="text"
+                    id="region"
+                    name="region"
+                    placeholder="Region"
+                >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="event">Choose an Event</label>
+            <select id="event" name="event" required>
+                <option value="">Select an event</option>
+                <option value="Web Development Workshop">Web Development Workshop</option>
+                <option value="Technology Seminar">Technology Seminar</option>
+                <option value="Web Design Competition">Web Design Competition</option>
+                <option value="Programming Workshop">Programming Workshop</option>
+                <option value="Technology Exhibition">Technology Exhibition</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Where did you hear about us?</legend>
+
+            <label class="choice">
+                <input
+                    type="radio"
+                    name="heardAbout"
+                    value="Friend"
+                    required
+                >
+                A Friend or Colleague
+            </label>
+
+            <label class="choice">
+                <input
+                    type="radio"
+                    name="heardAbout"
+                    value="Social Media"
+                >
+                Social Media
+            </label>
+
+            <label class="choice">
+                <input
+                    type="radio"
+                    name="heardAbout"
+                    value="University Announcement"
+                >
+                University Announcement
+            </label>
+        </fieldset>
+
+        <button type="submit">Register Now</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <p id="confirmationMessage" aria-live="polite"></p>
+
+    <div class="saved-registrations">
+        <h2>Saved Registrations</h2>
+        <ul id="registrationList">
+            <li>No registrations saved yet.</li>
+        </ul>
+
+        <button type="button" id="clearAll">
+            Clear All Registrations
+        </button>
+    </div>
+</section>
+<script src="js/script.js"></script>
+ <!-- Full-width footer -->
+    <footer>
+        <p>&copy; 2026 Qarshi Club Society. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
