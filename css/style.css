@@ -226,10 +226,10 @@ button:hover {
 
 /* Full-width registration section */
 .registration-section {
-    width: 90%;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1500px;
     margin: 35px auto;
-    padding: 40px;
+    padding: 30px;
     background: linear-gradient(120deg, #e5f2ff, #f5e4e9);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -297,8 +297,8 @@ footer {
     }
 
     .registration-section {
-        width: 95%;
-        padding: 20px 15px;
+        width: 100%;
+        padding: 25px 20px;
     }
 
     .registration-section > h2 {

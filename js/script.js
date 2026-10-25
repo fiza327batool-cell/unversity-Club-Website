@@ -2,7 +2,7 @@ const registrationForm = document.getElementById("registrationForm");
 const confirmationMessage = document.getElementById("confirmationMessage");
 const registrationList = document.getElementById("registrationList");
 const clearAllButton = document.getElementById("clearAll");
-// Get saved registrations from localStorage
+// Get saved registrations from local Storage
 let registrations = JSON.parse(
     localStorage.getItem("registrations")
 ) || [];
